@@ -7,4 +7,5 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/* \
 
 VOLUME /var/lib/grafana
+EXPOSE 3000
 CMD [ "grafana-server", "--config=/var/lib/grafana/grafana.ini" ]
