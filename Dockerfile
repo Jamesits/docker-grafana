@@ -8,4 +8,4 @@ RUN apt-get update \
 
 VOLUME [ "/var/lib/grafana", "/etc/grafana" ]
 EXPOSE 3000
-CMD [ "/usr/sbin/grafana", "--config=/var/lib/grafana/grafana.ini" ]
+CMD [ "/usr/sbin/grafana" ]
